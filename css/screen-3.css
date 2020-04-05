@@ -1,0 +1,55 @@
+.screen-3 {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.screen-3__logo {
+    position: absolute;
+    left: 12px;
+    top: 10px;
+}
+
+.screen-3__logo img {
+    width: 64px;
+}
+
+.screen-3__cake,
+.screen-3__text {
+    position: absolute;
+}
+
+
+.screen-3__cake.creen-3__cake--1 {
+    left: 95px;
+    top: -75px;
+    z-index: 2;
+}
+
+.screen-3__cake.creen-3__cake--2 {
+    right: -78px;
+    top: 150px;
+    z-index: 4;
+}
+
+.screen-3__cake.creen-3__cake--3 {
+    left: -84px;
+    top: 215px;
+    z-index: 1;
+}
+
+.screen-3__cake.creen-3__cake--main {
+    z-index: 3;
+    left: 10px;
+    top: 130px;
+}
+
+
+.screen-3__text.screen-3__text--1 {
+    top: 60px;
+    left: 30px;
+}
+
+.screen-3__text.screen-3__text--2 {
+    top: 80px;
+    left: 25px;
+}

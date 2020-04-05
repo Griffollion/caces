@@ -1,0 +1,61 @@
+.screen-1.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.screen-1__logo {
+    position: absolute;
+    left: 12px;
+    top: 10px;
+}
+
+.screen-1__logo img {
+    width: 64px;
+}
+
+.screen-1__text {
+    position: absolute;
+    left: 35px;
+    top: 60px;
+}
+
+.screen-1__questions-container {
+    position: absolute;
+    width: 100%;
+    top: 150px;
+}
+
+.screen-1__question {
+    position: absolute;
+}
+
+.screen-1__question.screen-1__question--1 {
+    left: 10px;
+    top: 8px;
+    z-index: 1;
+}
+
+.screen-1__question.screen-1__question--2 {
+    right: 10px;
+    top: 0;
+    z-index: 1;
+}
+
+.screen-1__question.screen-1__question--3 {
+    right: 82px;
+    top: 34px;
+    z-index: 3;
+}
+
+.screen-1__shadow {
+    position: absolute;
+    top: 35px;
+    left: 25px;
+    z-index: 2;
+}
+
+.screen-1__button {
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+}
