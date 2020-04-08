@@ -58,3 +58,12 @@
     top: 80px;
     left: 25px;
 }
+
+.screen-3__main-link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 240px;
+    height: 400px;
+    z-index: 1000;
+}

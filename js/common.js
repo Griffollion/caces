@@ -114,6 +114,17 @@ function start() {
     }
   });
 
+  secreen2.addEventListener("touchstart", function() {
+    if (isSecScreenActive) {
+      changeWrapper();
+
+      setTimeout(function() {
+        showThridScreen();
+        animateThridScreen();
+      }, 1300);
+    }
+  });
+
   secreen2.addEventListener("mousedown", function() {
     if (isSecScreenActive) {
       changeWrapper();
