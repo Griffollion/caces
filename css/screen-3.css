@@ -1,4 +1,4 @@
-.screen-3 {
+.screen-3.active {
     opacity: 1;
     pointer-events: auto;
 }
@@ -16,6 +16,7 @@
 .screen-3__cake,
 .screen-3__text {
     position: absolute;
+    opacity: 0;
 }
 
 
@@ -47,6 +48,10 @@
 .screen-3__text.screen-3__text--1 {
     top: 60px;
     left: 30px;
+}
+
+.screen-3__text.screen-3__text--1.hide {
+    display: none !important;
 }
 
 .screen-3__text.screen-3__text--2 {

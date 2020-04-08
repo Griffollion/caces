@@ -7,7 +7,7 @@
 .screen-2__old-wrapper,
 .screen-2__wrappers,
 .screen-2__wrapper,
-.screen-2__wrapper-bottom,
+.screen-2__wrapper-top,
 .screen-2__new,
 .screen-2__cursor {
     position: absolute;
@@ -20,38 +20,72 @@
 }
 
 .screen-2__wrappers {
-    left: 35px;
+    left: 0;
     top: 82px;
 }
 
 .screen-2__old-wrapper {
-    left: 0;
+    left: 34px;
     top: 0;
     z-index: 2;
 }
 
+.screen-2__old-wrapper.hide {
+    display: none !important;
+}
+
 .screen-2__new {
     left: 0;
-    top: 0;
+    top: -80px;
     z-index: 1;
 }
 
+.screen-2__wrappers-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 240px;
+    height: 234px;
+    top: 55px;
+    transition: height 1s, top 1s;
+}
+
+.screen-2__wrappers-wrapper.down {
+    height: 144px;
+    top: 145px;
+}
+
 .screen-2__wrapper {
-    left: -27px;
-    top: 34px;
+    left: 0;
+    bottom: -34px;
     z-index: 3;
+    transition: transform 1s;
 }
 
 
-.screen-2__wrapper-bottom {
+
+.screen-2__wrapper-top {
     z-index: 4;
-    left: 0;
-    top: 50px;
+    left: -28px;
+    top: -106px;
+    opacity: 0;
+    transition: transform 1s;
+}
+
+.screen-2__wrapper-top.down {
+    opacity: 1;
+    transform: translateY(85px);
 }
 
 .screen-2__cursor {
-    bottom: 15px;
-    left: 85px;
+    top: 17px;
+    left: 84px;
+    z-index: 100;
+    pointer-events: none;
+    opacity: 1;
+}
+
+.screen-2__cursor.hide {
+    display: none !important;
 }
 
 
